@@ -1,0 +1,82 @@
+// ai-tools-sec1
+.ai-tools-sec1 {}
+
+.ai-box-img {
+    max-width: 664px;
+    margin-left: auto;
+
+    img {
+        width: 100%;
+        border-radius: 20px;
+    }
+}
+
+.aitool-wrap {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 24px;
+
+    .box-item {
+        border-radius: 20px;
+        background: rgba(255, 255, 255, 0.20);
+        padding: 24px 24px;
+        position: relative;
+        z-index: 1;
+        text-align: center;
+        transition: all .5s ease-in-out;
+        overflow: hidden;
+
+        &::before {
+            position: absolute;
+            left: 0;
+            top: 0;
+            width: 0;
+            height: 100%;
+            content: '';
+            z-index: -1;
+            background: linear-gradient(90deg, $theme-color 0%, $theme-color3 100%);
+            transition: all .5s ease-in-out;
+        }
+
+        .box-title {
+            color: $white-color;
+            font-size: 22px;
+            font-weight: 500;
+            line-height: 32px;
+            margin-bottom: 8px;
+        }
+
+        .box-text {
+            color: $border-color;
+            font-size: 14px;
+            font-weight: 400;
+            line-height: 24px;
+            transition: all .5s ease-in-out;
+        }
+
+        &:hover {
+            &::before {
+                width: 100%;
+            }
+
+            .box-text {
+                color: $white-color;
+            }
+        }
+
+        &.active {
+             &::before {
+                width: 100%;
+            }
+
+            .box-text {
+                color: $white-color;
+            }
+        }
+    }
+
+.nav-tabs .nav-link.active {
+    border-color:0;
+}
+
+}
