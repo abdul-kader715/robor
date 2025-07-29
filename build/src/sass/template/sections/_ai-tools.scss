@@ -5,6 +5,10 @@
     max-width: 664px;
     margin-left: auto;
 
+    @include ml {
+        margin: 0 auto;
+    }
+
     img {
         width: 100%;
         border-radius: 20px;
@@ -15,6 +19,11 @@
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     gap: 24px;
+    border: 0;
+
+    @include sm {
+        grid-template-columns: repeat(1, 1fr);
+    }
 
     .box-item {
         border-radius: 20px;
@@ -25,6 +34,11 @@
         text-align: center;
         transition: all .5s ease-in-out;
         overflow: hidden;
+        border: 0;
+
+        @include ml {
+            padding: 20px 15px;
+        }
 
         &::before {
             position: absolute;
@@ -43,7 +57,7 @@
             font-size: 22px;
             font-weight: 500;
             line-height: 32px;
-            margin-bottom: 8px;
+            margin-bottom: 5px;
         }
 
         .box-text {
@@ -65,7 +79,9 @@
         }
 
         &.active {
-             &::before {
+            border: 0;
+
+            &::before {
                 width: 100%;
             }
 
@@ -75,8 +91,8 @@
         }
     }
 
-.nav-tabs .nav-link.active {
-    border-color:0;
-}
+    .nav-tabs .nav-link.active {
+        border-color: 0;
+    }
 
 }

@@ -5,17 +5,21 @@
         font-weight: 600;
         margin-top: -0.25em;
         margin-bottom: 40px;
+
         span {
             font-size: 30px;
         }
     }
+
     .swiper-wrapper {
         transition-timing-function: linear;
     }
+
     .swiper-slide {
         width: auto;
     }
 }
+
 .brand-box {
     display: grid;
     align-content: center;
@@ -23,9 +27,11 @@
     justify-content: center;
     transition: 0.4s ease-in-out;
     min-height: 32px;
+
     img {
         transition: 0.4s;
     }
+
     &:hover {
         img {
             filter: none;
@@ -33,19 +39,49 @@
         }
     }
 }
+
 /* Brand 2 ---------------------------------- */
 .brand-wrap2 {
     border-top: 1px solid $black-color3;
     border-bottom: 1px solid $black-color3;
+
     .swiper-wrapper {
         transition-timing-function: linear;
     }
+
     .swiper-slide {
         width: auto;
         opacity: 0.7;
         transition: 0.4s;
+
         &:hover {
             opacity: 1;
+        }
+    }
+}
+
+.brand-wrap5 {
+    border: 1px solid $black-color3;
+    border-radius: 30px;
+    padding: 48px;
+    position: relative;
+    z-index: 111;
+    margin-top: -178px;
+
+    @include sm {
+        padding: 30px 20px;
+    }
+
+    .swiper-wrapper {
+        transition-timing-function: linear;
+    }
+
+    .swiper-slide {
+        width: auto;
+        transition: 0.4s;
+
+        &:hover {
+            opacity: 0.7;
         }
     }
 }

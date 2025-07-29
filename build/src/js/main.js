@@ -320,6 +320,39 @@
         if ($('.slider-area').length > 0) {
             $('.slider-area').closest(".container").parent().addClass("arrow-wrap");
         }
+
+         // Category slider specific wheel effect
+        if (thSlider.hasClass('categorySlider')) {
+            const multiplier = {
+                // translate: 0.1,
+                // rotate: 0.008
+                translate: 0.40, 
+                rotate: 0.008
+            };
+
+            function calculateWheel() {
+                const slides = document.querySelectorAll('.single');
+                slides.forEach((slide) => {
+                    const rect = slide.getBoundingClientRect();
+                    const r = window.innerWidth * 0.5 - (rect.x + rect.width * 0.5);
+                    let ty = Math.abs(r) * multiplier.translate - rect.width * multiplier.translate;
+
+                    if (ty < 0) {
+                        ty = 0;
+                    }
+                    const transformOrigin = r < 0 ? 'left top' : 'right top';
+                    slide.style.transform = `translate(0, ${ty}px) rotate(${-r * multiplier.rotate}deg)`;
+                    slide.style.transformOrigin = transformOrigin;
+                });
+            }
+
+            function raf() {
+                requestAnimationFrame(raf);
+                calculateWheel();
+            }
+
+            raf();
+        }
     
     });
     

@@ -1,86 +1,120 @@
 <!--==============================
 Hero Area
 ==============================-->
-<div class="th-hero-wrapper hero-4" id="hero" data-bg-src="assets/img/bg/bg-pattern1.png">
-    <div class="swiper th-slider hero-slider4" id="heroSlider4" data-slider-options='{"effect":"fade","autoHeight": "true"}'>
-        <div class="swiper-wrapper">
-            <?php
-                $title = array(
-                    'We are available to',
-                    'We are available to',
-                    'We are available to',
-                );
-                $title2 = array( 
-                    'advice to build your ',
-                    'advice to build your ',
-                    'advice to build your ',
-                );
-                $title3 = array( 
-                    'business ',
-                    'business ',
-                    'business ',
-                );
-                $content = array(
-                    'We create exceptional digital work for web, mobile, and experiential platforms for both creative agencies.',
-                    "We are a fully dedicated corporate service agency collaborating with brands all over the world.",
-                    'Our business consulting services are rooted in a deep understanding of industry trends and the latest technologies.',
-                );
-                $img = array(
-                    'assets/img/hero/hero_4_1.jpg',
-                    'assets/img/hero/hero_4_2.jpg',
-                    'assets/img/hero/hero_4_3.jpg',
-                );
-                
-
-                $arrlength = count($title);
-
-                for($x = 0; $x < $arrlength; $x++) {
-                ?>
-                    <div class="swiper-slide">
-                        <div class="hero-inner">
-                            <div class="hero-thumb4">
-                                <div class="hero-img">
-                                    <img src="<?php echo $img[$x];?>" alt="Image">
-                                </div>
-                                <div class="circle-tag">
-                                    <div class="circle-anime-tag">
-                                        <span class="circle-title-anime">LET'S GET STARTED. LET'S GET STARTED.</span>
-                                    </div>
-                                    <div class="thumb">
-                                        <img src="assets/img/logo-icon2.svg" alt="img">
-                                    </div>
-                                </div>  
+<div class="th-hero-wrapper hero-4 posetion-relative" id="hero">
+    <div class="th-hero-bg" data-bg-src="assets/img/hero/hero_bg_4_1.jpg"></div>
+    <div class="th-hero-bg" data-bg-src="assets/img/shape/hero-bg-shape4-1.png"></div>
+    <div class="hero-inner">
+        <div class="hero-style2 text-center">
+            <div class="container">
+                <div class="row justify-content-center">
+                    <div class="col-xl-9 col-lg-10">
+                        <div>
+                            <h1 class="hero-title text-white text-anim2" data-cue="slideInUp" data-delay="100">
+                            Create beautiful art with 
+                            Artificial intelligence
+                            </h1>
+                            <p class="hero-text text-anim2" data-cue="slideInUp" data-delay="300">Create AI images using our AI Image Generator. Prompt in video
+                                AI and turn your idea into an image.</p>
+                        
+                        </div>
+                         <div class="prompt">
+                            <div>
+                                <input type="text" class="prompt-input" placeholder="Describe what you want or hit a tag below">
                             </div>
-                            <div class="container">
-                                <div class="row">
-                                    <div class="col-xl-6 col-lg-7">
-                                        <div class="hero-style4">
-                                            <div class="hero-bg-shape4-1 jump">
-                                                <div class="color-masking">
-                                                    <div class="masking-src" data-mask-src="assets/img/shape/bg-shape9.png"></div>
-                                                    <img src="assets/img/shape/bg-shape9.png" alt="img">
-                                                </div>
-                                            </div>
-                                            <h1 class="hero-title text-white">
-                                                <span class="title1" data-ani="slideinup" data-ani-delay="0.3s"><?php echo $title[$x];?></span>
-                                                <span class="title2" data-ani="slideinup" data-ani-delay="0.4s"><?php echo $title2[$x];?></span>
-                                                <span class="title2" data-ani="slideinup" data-ani-delay="0.5s"><?php echo $title3[$x];?></span>
-                                            </h1>
-                                            <p class="hero-text text-white" data-ani="slideinup" data-ani-delay="0.6s"><?php echo $content[$x];?></p>
-                                            <div class="btn-wrap" data-ani="slideinup" data-ani-delay="0.7s">
-                                                <a href="contact.html" class="th-btn style6 btn-radius-8">Get Started <i class="fa-solid fa-arrow-right ms-2"></i></a>
-                                                <a href="service.html" class="th-btn style-border2 btn-radius-8">Our Services <i class="fa-solid fa-arrow-right ms-2"></i></a>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
+                            <div class="get-started-btn">
+                                <select class="style-dropdown style2">
+                                    <option>No Style</option>
+                                    <option>Realistic</option>
+                                    <option>Cartoon</option>
+                                </select>
+                                <button class="th-btn style-gradient4">Get Started</button>
                             </div>
+                            
+                        </div> 
+                        <div class="tags-box">
+                            <button class="btn-tag">Creative</button>
+                            <button class="btn-tag">Innovative</button>
+                            <button class="btn-tag">Imaginative</button>
+                            <button class="btn-tag">Cartoon</button>
+                            <button class="btn-tag">Visionary</button>
+                            <button class="btn-tag">Inventive</button>
                         </div>
                     </div>
-                    <?php }; 
-            ?>
+                </div>
+            </div>
+            <div class="hero-side-1 shape-mockup d-xl-block d-none" data-top="23%" data-left="2%">
+                <img src="assets/img/normal/hero-side4-1.jpg" alt="img">
+            </div>
+            <div class="hero-side-2 shape-mockup d-xl-block d-none" data-top="64%" data-left="12%">
+                <img src="assets/img/normal/hero-side4-2.jpg" alt="img">
+            </div>
+            <div class="hero-side-1 shape-mockup d-xl-block d-none" data-top="32%" data-right="2%">
+                <img src="assets/img/normal/hero-side4-3.jpg" alt="img">
+            </div>
+            <div class="hero-side-2 shape-mockup d-xl-block d-none" data-top="64%" data-right="12%">
+                <img src="assets/img/normal/hero-side4-4.jpg" alt="img">
+            </div>
         </div>
-        <div class="slider-pagination"></div>
+       
+        
     </div>
+    <div class="hero-category-wrap2">
+            <div class="swiper th-slider categorySlider" id="categorySlider" data-slider-options='{"breakpoints":{"0":{"slidesPerView":1},
+            "576":{"slidesPerView":"1"},"768":{"slidesPerView":"2"},"992":{"slidesPerView":"3"},"1200":{"slidesPerView":"5"},
+            "1400":{"spaceBetween":30,"slidesPerView":"7"}}}'>
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide">
+                        <div class="hero-category-card single"><img src="assets/img/hero/hero-category1-1.jpg" alt="img"></div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="hero-category-card single"><img src="assets/img/hero/hero-category1-2.jpg" alt="img"></div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="hero-category-card single"><img src="assets/img/hero/hero-category1-3.jpg" alt="img"></div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="hero-category-card single"><img src="assets/img/hero/hero-category1-4.jpg" alt="img"></div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="hero-category-card single"><img src="assets/img/hero/hero-category1-5.jpg" alt="img"></div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="hero-category-card single"><img src="assets/img/hero/hero-category1-6.jpg" alt="img"></div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="hero-category-card single"><img src="assets/img/hero/hero-category1-7.jpg" alt="img"></div>
+                    </div>
+                        <div class="swiper-slide">
+                        <div class="hero-category-card single"><img src="assets/img/hero/hero-category1-1.jpg" alt="img"></div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="hero-category-card single"><img src="assets/img/hero/hero-category1-2.jpg" alt="img"></div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="hero-category-card single"><img src="assets/img/hero/hero-category1-3.jpg" alt="img"></div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="hero-category-card single"><img src="assets/img/hero/hero-category1-4.jpg" alt="img"></div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="hero-category-card single"><img src="assets/img/hero/hero-category1-5.jpg" alt="img"></div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="hero-category-card single"><img src="assets/img/hero/hero-category1-6.jpg" alt="img"></div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="hero-category-card single"><img src="assets/img/hero/hero-category1-7.jpg" alt="img"></div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+        <div class="scroll-down">
+            <a href="#cta-sec" class="hero-scroll-wrap"></a>
+        </div>
+         <?php get_section('brand-v5', ''); ?>
+        <div class="hero-category-bg">
+            <img src="assets/img/shape/category-bg-shape4-1.svg" alt="img">
+        </div> 
 </div>
-<!--======== / Hero Section ========-->
