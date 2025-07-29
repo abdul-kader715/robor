@@ -68,6 +68,13 @@
     z-index: 111;
     margin-top: -178px;
 
+    @media (max-width:1599px) {
+        margin-top: -120px;
+    }
+     @media (max-width:1399px) {
+        margin-top: 0px;
+    }
+  
     @include sm {
         padding: 30px 20px;
     }

@@ -43,16 +43,16 @@ Hero Area
                     </div>
                 </div>
             </div>
-            <div class="hero-side-1 shape-mockup d-xl-block d-none" data-top="23%" data-left="2%">
+            <div class="hero-side-1 shape-mockup d-xxl-block d-none" data-top="23%" data-left="2%">
                 <img src="assets/img/normal/hero-side4-1.jpg" alt="img">
             </div>
-            <div class="hero-side-2 shape-mockup d-xl-block d-none" data-top="64%" data-left="12%">
+            <div class="hero-side-2 shape-mockup d-xxl-block d-none" data-top="64%" data-left="12%">
                 <img src="assets/img/normal/hero-side4-2.jpg" alt="img">
             </div>
-            <div class="hero-side-1 shape-mockup d-xl-block d-none" data-top="32%" data-right="2%">
+            <div class="hero-side-1 shape-mockup d-xxl-block d-none" data-top="23%" data-right="2%">
                 <img src="assets/img/normal/hero-side4-3.jpg" alt="img">
             </div>
-            <div class="hero-side-2 shape-mockup d-xl-block d-none" data-top="64%" data-right="12%">
+            <div class="hero-side-2 shape-mockup d-xxl-block d-none" data-top="64%" data-right="12%">
                 <img src="assets/img/normal/hero-side4-4.jpg" alt="img">
             </div>
         </div>
@@ -60,8 +60,8 @@ Hero Area
         
     </div>
     <div class="hero-category-wrap2">
-            <div class="swiper th-slider categorySlider" id="categorySlider" data-slider-options='{"breakpoints":{"0":{"slidesPerView":1},
-            "576":{"slidesPerView":"1"},"768":{"slidesPerView":"2"},"992":{"slidesPerView":"3"},"1200":{"slidesPerView":"5"},
+            <div class="swiper th-slider categorySlider" id="categorySlider" data-slider-options='{"breakpoints":{"0":{"spaceBetween":30,"slidesPerView":1},
+            "576":{"spaceBetween":30,"slidesPerView":"1"},"768":{"slidesPerView":"3"},"992":{"slidesPerView":"3"},"1200":{"slidesPerView":"5"},
             "1400":{"spaceBetween":30,"slidesPerView":"7"}}}'>
                 <div class="swiper-wrapper">
                     <div class="swiper-slide">

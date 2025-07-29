@@ -707,10 +707,14 @@
         bottom: 0;
         width: 100%;
         z-index: 11;
-        height: 356px;
+
+        @media (max-width:1199px) {
+            display: none;
+        }
 
         img {
             width: 100%;
+            height: 100%;
         }
     }
 
@@ -720,6 +724,14 @@
         bottom: 250px;
         transform: translate(-50%, 0);
         z-index: 111;
+
+        @media (max-width:1399px) {
+            bottom: 210px;
+        }
+
+        @media (max-width:1199px) {
+            display: none;
+        }
 
         .hero-scroll-wrap {
             display: inline-block;
@@ -752,9 +764,9 @@
             }
         }
 
-        @include xxl {
-            bottom: 40px;
-        }
+        // @include xxl {
+        //     bottom: 40px;
+        // }
     }
 
 }
@@ -796,6 +808,14 @@
     backdrop-filter: blur(22px);
     margin: 0 auto;
 
+    @include md {
+        display: block;
+        border-radius: 30px;
+        height: auto;
+        padding: 30px 20px;
+        text-align: left;
+    }
+
     input {
         background: transparent;
         padding: 0;
@@ -806,6 +826,12 @@
         font-size: 14px;
         font-weight: 400;
         border-radius: 0;
+
+        @include md {
+            width: 100%;
+            border-bottom: 1px solid rgba(255, 255, 255, 0.20);
+            padding-bottom: 10px;
+        }
     }
 
     input::placeholder {
@@ -821,6 +847,15 @@
         font-size: 14px;
         font-weight: 400;
         background-size: 15px 12px;
+        border-radius: 0;
+
+        @include md {
+            width: 100%;
+            border-bottom: 1px solid rgba(255, 255, 255, 0.20);
+            padding-bottom: 10px;
+            padding-top: 10px;
+            padding-left: 0;
+        }
 
         option {
             color: black;
@@ -830,11 +865,20 @@
     .get-started-btn {
         display: flex;
         align-items: center;
+
+        @include md {
+            display: block;
+        }
     }
 
     .th-btn {
         align-items: center;
         padding: 20px 30px;
+
+        @include md {
+            margin-top: 20px;
+            padding: 18px 30px;
+        }
     }
 
     .th-btn::before {
@@ -856,6 +900,10 @@
     gap: 10px;
     justify-content: center;
     margin-top: 24px;
+
+    @include md {
+        flex-wrap: wrap;
+    }
 }
 
 .btn-tag {
@@ -888,6 +936,22 @@
 
 .categorySlider {
     padding-bottom: 356px;
+
+    @media (max-width:1599px) {
+        padding-bottom: 256px;
+    }
+
+    @media (max-width:1399px) {
+        padding-bottom: 50px;
+    }
+
+    @media (max-width:1199px) {
+        padding-bottom: 120px;
+    }
+
+    @include md {
+        padding-bottom: 80px;
+    }
 
     .swiper-wrapper {
         align-items: end;
