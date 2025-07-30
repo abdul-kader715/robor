@@ -3,7 +3,28 @@
 Cta Area  
 ==============================-->
 <section class="<?php echo $klass;?>" id="contact-sec">
-    <div class="cta-wrap3 bg-theme-dark">
+    <div class="cta-wrap4 space" data-overlay="theme" data-opacity="1" data-bg-src="assets/img/normal/cta-bg-img3-1.png">
+        <div class="container">
+            <div class="row">
+                <div class="col-xl-6">
+                    <div class="title-area ">
+                        <h2 class="sec-title m-0">unlock the power
+                            of ai for everyone <br>
+                              <span class="line"></span>  start using
+                            robor today!</h2>
+                    </div>
+                    <div class="btn-wrap" data-cue="slideInUp" data-delay="500">
+                                <a href="service.html" class="th-btn style2">Get Started Now <i class="far fa-long-arrow-right ms-2"></i></a>
+                                <a href="contact.html" class="th-btn style-border3">Contact Us <i class="far fa-long-arrow-right ms-2"></i></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+
+    <!-- <div class="cta-wrap3 bg-theme-dark">
         <div class="row gx-0">
             <div class="col-xl-7">
                 <div class="cta-content-wrap">
@@ -39,5 +60,4 @@ Cta Area
                 </div>
             </div>
         </div>
-    </div>
-</section>
+    </div> -->

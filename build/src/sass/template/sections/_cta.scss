@@ -204,3 +204,62 @@
         }
     }
 }
+
+
+//Call to action 4---------------------------------------
+
+.cta-sec-4 {
+    margin: 24px;
+    border-radius: 40px;
+margin-top: 0;
+    @include ml {
+        margin: 0;
+        border-radius: 0;
+    }
+}
+
+.cta-wrap4 {
+
+    .title-area {
+        max-width: 610px;
+
+
+    }
+
+    .sec-title {
+        color: $black-color2;
+        font-weight: 500;
+        text-transform: uppercase;
+        margin-bottom: calc(var(--section-title-space) - 8px);
+        br{
+            @include ml{
+                display: none;
+            }
+        }
+        @include sm {
+            font-size: 40px;
+            line-height: 65px;
+        }
+
+        .line {
+            width: 78px;
+            height: 4px;
+            background-color: $theme-color;
+            display: inline-block;
+            position: relative;
+            top: -20px;
+             @include ml{
+                display: none;
+            }
+        }
+    }
+
+    .th-btn.style-border3 {
+        color: $title-color;
+
+        i {
+            color: $title-color;
+        }
+    }
+
+}
