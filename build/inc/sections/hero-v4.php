@@ -60,8 +60,8 @@ Hero Area
         
     </div>
     <div class="hero-category-wrap2">
-            <div class="swiper th-slider categorySlider" id="categorySlider" data-slider-options='{"breakpoints":{"0":{"spaceBetween":30,"slidesPerView":1},
-            "576":{"spaceBetween":30,"slidesPerView":"1"},"768":{"slidesPerView":"3"},"992":{"slidesPerView":"3"},"1200":{"slidesPerView":"5"},
+            <div class="swiper th-slider categorySlider" id="categorySlider" data-slider-options='{"breakpoints":{"0":{"spaceBetween":70,"slidesPerView":1},
+            "576":{"spaceBetween":60,"slidesPerView":"1"},"768":{"slidesPerView":"3"},"992":{"slidesPerView":"3"},"1200":{"slidesPerView":"5"},
             "1400":{"spaceBetween":30,"slidesPerView":"7"}}}'>
                 <div class="swiper-wrapper">
                     <div class="swiper-slide">

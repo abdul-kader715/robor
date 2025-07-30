@@ -1,5 +1,5 @@
 <?php include_once('inc/functions.php');
-get_header('script','Home four', 'bg-black');
+get_header('script','Home five', '');
 get_header('v3');
 get_section('hero-v4');
 get_section('cta-v1.1', 'space-top overflow-hidden');
@@ -14,6 +14,6 @@ get_section('gallery-sec-v1', 'space-top overflow-hidden');
 get_section('price-sec-v4', 'space overflow-hidden');
 get_section('blog-sec-v4', ' overflow-hidden space-bottom');
 
-
-get_footer('v4', 'space-top footer-wrapper footer-layout1 style2 gr-bg5');
+get_section('cta-v3', ' overflow-hidden');
+get_footer('v5', 'footer-wrapper footer-layout1 style3 black-color2');
 ?>

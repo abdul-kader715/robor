@@ -2,59 +2,54 @@
 <!--==============================
 	Footer Area
 ==============================-->
-<footer class="footer-wrapper footer-layout5 bg-black" data-bg-src="assets/img/bg/footer_bg_5.jpg">
-	<div class="footer-top">
-		<div class="container">
-			<div class="row gy-50 justify-content-between">
-				<div class="col-auto">
-					<div class="cta-link">
-						<div class="cta-link-icon">
-							<i class="fas fa-phone"></i>
-						</div>
-						<div>
-							<p>Need Any Help?</p>
-							<a class="cta-single-link" href="tel:+19524357106">Call Now - +112 (789) 568 25</a>
-						</div>
-					</div>
-				</div>
-				<div class="col-auto">
-					<a href="contact.html" class="th-btn style3">Contact Us <div class="icon"><i class="fa-solid fa-arrow-up-right ms-3"></i></div></a>
-				</div>
-			</div>
-		</div>
+<footer class="  <?php echo $klass;?>">
+	<div class="shape-mockup footer-bg-shape1-1" data-left="50%" data-bottom="-50%">
+		<img src="assets/img/shape/footer-bg-shape2.png" alt="img">
 	</div>
 	<div class="container">
-		<div class="widget-area">
-			<div class="row justify-content-between">
-				<div class="col-md-6 col-xl-auto">
-					<?php get_widget('about', 'footer-widget'); ?>
+		<div class="footer-bottom">
+			<div class="widget-area">
+				<div class="row justify-content-between">
+					<div class="col-md-6 col-xl-auto" data-cue="slideInUp">	
+						<?php get_widget('newsletter', 'footer-widget'); ?>
+					</div>
+					<div class="col-sm-6 col-xl-auto" data-cue="slideInUp">
+						<?php get_widget('nav-menu', 'footer-widget'); ?>
+					</div>
+					<div class="col-sm-6 col-xl-auto" data-cue="slideInUp">
+						<?php get_widget('nav-menu-v2', 'footer-widget'); ?>
+					</div>
+					<div class="col-sm-6 col-xl-auto" data-cue="slideInUp">
+						<?php get_widget('nav-menu-v3', 'footer-widget'); ?>
+					</div>
+					<div class="col-md-6 col-xl-auto" data-cue="slideInUp">
+						<?php get_widget('instagram-feeds', 'footer-widget'); ?>
+					</div>
+					
+					
 				</div>
-				<div class="col-md-6 col-xl-auto">
-					<?php get_widget('nav-menu', 'footer-widget'); ?>
-				</div>
-				<div class="col-md-6 col-xl-auto">	
-					<?php get_widget('recent-post-v2', 'footer-widget'); ?>
-				</div>
-				<div class="col-md-6 col-xl-3">
-					<?php get_widget('newsletter-v1', 'footer-widget'); ?>
-				</div>
-				
 			</div>
+			
 		</div>
 	</div>
-	<div class="copyright-wrap">
+	<div class="copyright-wrap ">
 		<div class="container">
-			<div class="row gy-2 align-items-center">
-				<div class="col-lg-6">
-					<p class="copyright-text">
-					<i class="fal fa-copyright"></i> <?php echo date("Y"); ?> All Rights Reserved By <a href="<?php echo indexURL;?>"><?php echo Author;?></a></p>
+			<div class="row gy-2">
+				<div class="col-lg-6" data-cue="slideInUp">
+					<p class="copyright-text">Copyright <?php echo date("Y"); ?> <a href="<?php echo indexURL;?>"><?php echo Author;?>.</a> All Rights Reserved.</p>
 				</div>
-				<div class="col-lg-6 text-center text-lg-end">
+				<div class="col-lg-6 text-center text-lg-end" data-cue="slideInUp">
 					<div class="footer-links">
 						<ul>
-							<li><a href="about.html">Privacy Policy</a></li>
-							<li><a href="about.html">Terms & Condition</a></li>
-							<li><a href="about.html">Support policy</a></li>
+							<li>
+								<a href="about.html">Privacy Policy</a>
+							</li>
+							<li>
+								<a href="contact.html">Contact</a>
+							</li>
+							<li>
+								<a href="about.html">Terms and Conditions.</a>
+							</li>
 						</ul>
 					</div>
 				</div>
@@ -75,7 +70,9 @@
         </svg>
     </div>
 
+	
 <?php get_footer('script'); ?>
+
 
 </body>
 

@@ -1,7 +1,7 @@
 <!--==============================
 Feature Area  
 ==============================-->
-<section class="<?php echo $klass;?>">
+<section class="<?php echo $klass;?>" id="service-sec">
     <div class="container">
         <div class="row justify-content-between align-items-center">
             <div class="col-xl-6">

@@ -73,9 +73,15 @@ $value in $bgcolorMap {
 .bg-attachment {
     background-attachment: fixed;
 }
+
 .border-color {
     color: $border-color;
 }
-.gray-color3{
-    color: $gray-color3 ;
+
+.gray-color3 {
+    color: $gray-color3;
+}
+
+.black-color2 {
+    background-color: $black-color2 !important;
 }

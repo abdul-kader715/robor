@@ -1,7 +1,7 @@
 <!--==============================
 Generate image Area  
 ==============================-->
-<section class="<?php echo $klass;?>" data->
+<section class="<?php echo $klass;?>" id="about-sec">
     <div class="container"> 
         <div class="row gx-70 gy-60 flex-row-reverse">
              <div class="col-xxl-6 ">

@@ -1,6 +1,6 @@
 <?php include_once('inc/functions.php');
 get_header('script','Home four', 'bg-black');
-get_header('v3');
+get_header('v3-op');
 get_section('hero-v4');
 get_section('cta-v1.1', 'space-top overflow-hidden');
 get_section('video-sec-v1.1', 'overflow-hidden space-bottom');

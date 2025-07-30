@@ -2,7 +2,7 @@
 <!--==============================
 Cta Area  
 ==============================-->
-<div class="cta-area-3 <?php echo $klass;?>" id='cta-sec'>
+<div class="cta-area-3 <?php echo $klass;?>" id='contact-sec'>
     <div class="container">
         <div class="row justify-content-center">
             <div class="col-lg-9 col-12">

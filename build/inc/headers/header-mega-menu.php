@@ -41,7 +41,7 @@
                  <div class="col-lg-4">
                     <div class="mega-menu-box">
                         <div class="mega-menu-img">
-                            <img src="assets/img/pages/index.jpg" alt="Home One">
+                            <img src="assets/img/pages/home-4.jpg" alt="Home One">
                             <div class="btn-wrap">
                                 <a href="home-4.html" class="th-btn style3">Multipage</a>
                                 <a href="home-4-op.html" class="th-btn style3">Onepage</a>
@@ -53,7 +53,7 @@
                 <div class="col-lg-4">
                     <div class="mega-menu-box">
                         <div class="mega-menu-img">
-                            <img src="assets/img/pages/home-2.jpg" alt="Home Two">
+                            <img src="assets/img/pages/home-5.jpg" alt="Home Two">
                             <div class="btn-wrap">
                                 <a href="home-5.html" class="th-btn style3">Multipage</a>
                                 <a href="home-5-op.html" class="th-btn style3">Onepage</a>
@@ -65,7 +65,7 @@
                 <div class="col-lg-4">
                     <div class="mega-menu-box">
                         <div class="mega-menu-img">
-                            <img src="assets/img/pages/home-3.jpg" alt="Home Three">
+                            <img src="assets/img/pages/home-6.jpg" alt="Home Three">
                             <div class="btn-wrap">
                                 <a href="home-6.html" class="th-btn style3">Multipage</a>
                                 <a href="home-6-op.html" class="th-btn style3">Onepage</a>

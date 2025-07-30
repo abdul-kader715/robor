@@ -1,43 +1,78 @@
 <?php
     $title = array(
-        'Michel Smith',
-        'David Ade Smith',
+        'Michael Lacefield',
+        'Harry Callum',
+        'Mason Robert',
+        'Amelia Margaret',
+        'Sophia Jennifer',
+        'Daniel Thomas',
+        'Michael Lacefield',
+        'Harry Callum',
+        'Mason Robert',
+        'Amelia Margaret',
+        'Sophia Jennifer',
+        'Daniel Thomas',
     );
     $desig = array(
-        'Business Analyst',
-        'CEO, Founder',
+        'Co-founder, XYZ',
+        'Co-founder',
+        'Co-founder, XYZ',
+        'Co-founder',
+        'Co-founder, XYZ',
+        'Co-founder',
+        'Co-founder, XYZ',
+        'Co-founder',
+        'Co-founder, XYZ',
+        'Co-founder',
+        'Co-founder, XYZ',
+        'Co-founder',
     );
     $img = array(
-        'assets/img/testimonial/testi4-1.png',
-        'assets/img/testimonial/testi4-2.png',
+        'assets/img/testimonial/testi1-1.jpg',
+        'assets/img/testimonial/testi1-2.jpg',
+        'assets/img/testimonial/testi1-3.jpg',
+        'assets/img/testimonial/testi1-4.jpg',
+        'assets/img/testimonial/testi1-5.jpg',
+        'assets/img/testimonial/testi1-6.jpg',
+        'assets/img/testimonial/testi1-1.jpg',
+        'assets/img/testimonial/testi1-2.jpg',
+        'assets/img/testimonial/testi1-3.jpg',
+        'assets/img/testimonial/testi1-4.jpg',
+        'assets/img/testimonial/testi1-5.jpg',
+        'assets/img/testimonial/testi1-6.jpg',
     );
-    $text = array(        
-        "“Excellent content and a real sense of community among the participants, all curated in a wonderful setting. It is clear effort goes into the organization and planning of the gatherings.”",
-
-        "“Stay informed about our upcoming events and campaigns. Whether it's a fundraising, a charity run, or a community outreach program, there are plenty of ways to get involved and support.”",
-
-        "“Excellent content and a real sense of community among the participants, all curated in a wonderful setting. It is clear effort goes into the organization and planning of the gatherings.”",
-
-        "“Stay informed about our upcoming events and campaigns. Whether it's a fundraising, a charity run, or a community outreach program, there are plenty of ways to get involved and support.”",
+    $text = array(
+        "“Sit molestie orci a lacus. Consectetur eu accumsan aliquet nisi. Eget mauris commodo dis sed arcu integer fringilla. Egestas vitae non cum sit. Tellus nec in sapien maecenas in vel.”",
+        "“Eget mauris commodo dis sed arcu integer fringilla. Sit molestie orci a lacus. Consectetur eu accumsan aliquet nisi. Egestas vitae non cum sit. Tellus nec in sapien maecenas in vel.”",
+        "“Consectetur eu accumsan aliquet nisi. Sit molestie orci a lacus. Eget mauris commodo dis sed arcu integer fringilla. Egestas vitae non cum sit. Tellus nec in sapien maecenas in vel.”",
+        "“Tellus nec in sapien maecenas in vel. Sit molestie orci a lacus. Consectetur eu accumsan aliquet nisi. Eget mauris commodo dis sed arcu integer fringilla. Egestas vitae non cum sit.”",
+        "“Egestas vitae non cum sit. Sit molestie orci a lacus. Consectetur eu accumsan aliquet nisi. Eget mauris commodo dis sed arcu integer fringilla. Tellus nec in sapien maecenas in vel.”",
+        "“Mauris eget commodo dis sed arcu integer fringilla. Sit molestie orci a lacus. Consectetur eu accumsan aliquet nisi. Egestas vitae non cum sit. Tellus nec in sapien maecenas in vel.”",
+        "“Sit molestie orci a lacus. Consectetur eu accumsan aliquet nisi. Eget mauris commodo dis sed arcu integer fringilla. Egestas vitae non cum sit. Tellus nec in sapien maecenas in vel.”",
+        "“Eget mauris commodo dis sed arcu integer fringilla. Sit molestie orci a lacus. Consectetur eu accumsan aliquet nisi. Egestas vitae non cum sit. Tellus nec in sapien maecenas in vel.”",
+        "“Consectetur eu accumsan aliquet nisi. Sit molestie orci a lacus. Eget mauris commodo dis sed arcu integer fringilla. Egestas vitae non cum sit. Tellus nec in sapien maecenas in vel.”",
+        "“Tellus nec in sapien maecenas in vel. Sit molestie orci a lacus. Consectetur eu accumsan aliquet nisi. Eget mauris commodo dis sed arcu integer fringilla. Egestas vitae non cum sit.”",
+        "“Egestas vitae non cum sit. Sit molestie orci a lacus. Consectetur eu accumsan aliquet nisi. Eget mauris commodo dis sed arcu integer fringilla. Tellus nec in sapien maecenas in vel.”",
+        "“Mauris eget commodo dis sed arcu integer fringilla. Sit molestie orci a lacus. Consectetur eu accumsan aliquet nisi. Egestas vitae non cum sit. Tellus nec in sapien maecenas in vel.”",
     );
     $arrlength = count($title);
 
     for($x = 0; $x < $arrlength; $x++) {
     ?>
         <div class="<?php echo $klass;?>">
-            <div class="testi-card3">
-                <div class="box-img">
-                    <img src="<?php echo $img[$x];?>" alt="img">
+            <div class="testi-cad style3">
+                <div class="testi-card_review">
+                    <i class="fa-sharp fa-solid fa-star"></i><i class="fa-sharp fa-solid fa-star"></i><i class="fa-sharp fa-solid fa-star"></i><i class="fa-sharp fa-solid fa-star"></i><i class="fa-sharp fa-solid fa-star"></i>
                 </div>
-                <div class="box-content">
-                    <div class="quote-icon" data-mask-src="assets/img/icon/quote.svg"></div>
-                    <p class="box-text"><?php echo $text[$x];?></p>
-                    <div class="testi-card_review">
-                        4.9
-                        <i class="fa-sharp fa-solid fa-star"></i><i class="fa-sharp fa-solid fa-star"></i><i class="fa-sharp fa-solid fa-star"></i><i class="fa-sharp fa-solid fa-star"></i><i class="fa-sharp fa-solid fa-star"></i>
+                <p class="box-text"><?php echo $text[$x];?></p>
+                <div class="testi-card-profile">
+                    <div class="testi-card-avater">
+                        <img src="<?php echo $img[$x];?>" alt="img">
                     </div>
-                    <h3 class="box-title"><?php echo $title[$x];?></h3>
-                    <p class="box-desig"><?php echo $desig[$x];?></p>
+                    <div class="testi-card-profile-detaile">
+                        <h3 class="box-title"><?php echo $title[$x];?></h3>
+                        <p class="box-desig"><?php echo $desig[$x];?></p>
+                    </div>
                 </div>
             </div>
         </div>

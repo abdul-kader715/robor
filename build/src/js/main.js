@@ -353,6 +353,9 @@
 
             raf();
         }
+
+      
+
     
     });
     
@@ -1013,6 +1016,7 @@ scrollCue.init({
     percentage: 0.99,
     duration : 900,
 });
+
 
 
 
