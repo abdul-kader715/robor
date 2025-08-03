@@ -18,12 +18,8 @@ Blog Area
                 </div>
             </div>
         </div>
-        <div class="slider-area fadeinup wow" data-wow-duration="1.5s" data-wow-delay="0.5s">
-            <div class="swiper th-slider has-shadow" id="blogSlider5" data-slider-options='{"breakpoints":{"0":{"slidesPerView":1},"576":{"slidesPerView":"1"},"768":{"slidesPerView":"2"},"992":{"slidesPerView":"2"},"1200":{"slidesPerView":"3"}}}'>
-                <div class="swiper-wrapper">
-                    <?php get_section('blog-v5', 'swiper-slide', '5');?>
-                </div>
-            </div>
+       <div class="row gy-40 justify-content-center">
+            <?php get_section('blog-v5', 'col-xl-4 col-lg-6', '2');?>
         </div>
     </div>
 </section>

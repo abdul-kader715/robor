@@ -107,6 +107,12 @@
             background: $body-color;
         }
     }
+    &.style5 {
+        &:before,
+        &:after {
+            background: $theme-color;
+        }
+    }
     @include vxs {
         &:after,
         &:before {

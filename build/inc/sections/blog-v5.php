@@ -1,16 +1,10 @@
 <?php
 	$title = array(
-		'Holistic Enterprise Risk Management  for Mitigating ',
-		"Innovative Product Development and Market Entry Strategy.",
-		'Comprehensive Talent Acquisition and Retention',
-		'Holistic Enterprise Risk Management  for Mitigating ',
-		"Innovative Product Development and Market Entry Strategy.",
-		'Comprehensive Talent Acquisition and Retention',
+		'The rise of AI and Robotics in retail customer experiences ',
+		"The rise of AI and Robotics in retail customer experiences.",
+		'The rise of AI and Robotics in retail customer experiences',
 	);
 	$img = array(
-		'assets/img/blog/blog_5_1.jpg',
-		'assets/img/blog/blog_5_2.jpg',
-		'assets/img/blog/blog_5_3.jpg',
 		'assets/img/blog/blog_5_1.jpg',
 		'assets/img/blog/blog_5_2.jpg',
 		'assets/img/blog/blog_5_3.jpg',
@@ -19,9 +13,6 @@
 		'Jan 24',
 		'Jul 16',
 		'Jun 30',
-		'Jul 16',
-		'Jan 24',
-		'Jul 16',
 	);
 	$arrlength = count($title);
 
@@ -29,22 +20,18 @@
 	?>
 		<div class="<?php echo $klass;?>">
 			<div class="blog-card style5">
-				<div class="blog-img">
+				<div class="blog-img" data-mask-src="assets/img/shape/blog-card5-shape.png">
 					<a href="blog-details.html">
 						<img src="<?php echo $img[$x];?>" alt="blog image">
 					</a>
 				</div>
 				<div class="blog-content">
 					<div class="blog-meta">
-						<a class="author" href="blog.html"><img src="assets/img/blog/author.png" alt="img">By themehour</a>
-						<a href="blog.html">
-							<i class="fal fa-calendar-days"></i>
-							<?php echo $date[$x];?>, <?php echo date("Y"); ?>
-						</a>
+						<a href="blog.html"><i class="far fa-calendar"></i><?php echo $date[$x];?>, <?php echo date("Y"); ?></a>
+						<a href="blog.html"><i class="far fa-user"></i>by admin</a>
 					</div>
 					<h3 class="box-title"><a href="blog-details.html"><?php echo $title[$x];?></a></h3>
-					<p class="box-text">Robor offers full range of consultancy and training for data consultation strategic ways.</p>
-					<a href="blog-details.html" class="th-btn style5 btn-sm">Read More <i class="fas fa-plus ms-2"></i></a>
+					<a href="blog-details.html" class="link-btn style4">Read More <i class="fas fa-long-arrow-right ms-2"></i></a>
 				</div>
 			</div>
 		</div>
